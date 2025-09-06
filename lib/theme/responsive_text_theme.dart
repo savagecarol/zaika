@@ -19,15 +19,57 @@ class ResponsiveTextTheme {
       scale = 1.2;
     }
 
+    const fontFamily = 'Montserrat'; // your font
+
     return TextTheme(
-      displayLarge: TextStyle(fontWeight: FontWeight.bold, fontSize: 32 * scale),
-      displayMedium: TextStyle(fontWeight: FontWeight.w600, fontSize: 28 * scale),
-      displaySmall: TextStyle(fontWeight: FontWeight.w500, fontSize: 24 * scale),
-      headlineMedium: TextStyle(fontSize: 22 * scale, fontWeight: FontWeight.w500),
-      bodyLarge: TextStyle(fontSize: 18 * scale, fontWeight: FontWeight.w400),
-      bodyMedium: TextStyle(fontSize: 16 * scale, fontWeight: FontWeight.w400),
-      bodySmall: TextStyle(fontSize: 14 * scale, fontWeight: FontWeight.w300),
-      labelLarge: TextStyle(fontSize: 14 * scale, fontWeight: FontWeight.w500),
+      displayLarge: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 32 * scale,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      displayMedium: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 28 * scale,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      displaySmall: TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 24 * scale,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      headlineMedium: TextStyle(
+        fontSize: 22 * scale,
+        fontWeight: FontWeight.bold,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      bodyLarge: TextStyle(
+        fontSize: 18 * scale,
+        fontWeight: FontWeight.bold,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      bodyMedium: TextStyle(
+        fontSize: 16 * scale,
+        fontWeight: FontWeight.bold,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      bodySmall: TextStyle(
+        fontSize: 14 * scale,
+        fontWeight: FontWeight.bold,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
+      labelLarge: TextStyle(
+        fontSize: 14 * scale,
+        fontWeight: FontWeight.bold,
+        color: Colors.grey[900],
+        fontFamily: fontFamily,
+      ),
     );
   }
 }
