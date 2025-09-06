@@ -28,6 +28,7 @@ class CustomButton extends StatelessWidget {
         backgroundColor: backgroundColor,
              ),
       child: Container(
+        padding: EdgeInsets.all(8),
        width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

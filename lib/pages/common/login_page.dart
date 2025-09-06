@@ -26,7 +26,6 @@ class LoginPage extends StatelessWidget {
                 SizedBox(height:24),
                 UserChefToggle(),
                 SizedBox(height: 24),
-          
                 Form(
                   key: _formKey,
                   child: Column(

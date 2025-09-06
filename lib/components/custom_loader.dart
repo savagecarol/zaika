@@ -16,7 +16,16 @@ class CustomLoader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double defaultSize = MediaQuery.of(context).size.width * 0.4;
+    final double screenWidth = MediaQuery.of(context).size.width;
+    double defaultSize;
+    if (screenWidth < 600) {
+      defaultSize = screenWidth * 0.4; // ~40% of screen
+    } else if (screenWidth < 1024) {
+      defaultSize = screenWidth * 0.25; // ~25% of screen
+    } else {
+      defaultSize = screenWidth * 0.15; // ~15% of screen
+    }
+
     return Image.asset(
       imagePath,
       width: width ?? defaultSize,
@@ -24,5 +33,4 @@ class CustomLoader extends StatelessWidget {
       fit: fit,
     );
   }
-
 }

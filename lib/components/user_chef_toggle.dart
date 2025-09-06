@@ -15,7 +15,7 @@ class UserChefToggle extends StatelessWidget {
         color: bgColor,
         borderRadius: BorderRadius.circular(12),
       ),
-      padding: const EdgeInsets.all(8), // padding inside outer container
+      padding: const EdgeInsets.all(8), 
       child: Obx(() => Row(
             children: [
               Expanded(
